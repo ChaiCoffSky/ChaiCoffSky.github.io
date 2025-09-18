@@ -21,6 +21,11 @@
     .grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;}
     .card {background: #f7f7f7; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center;}
     .gallery img {width: 100%; border-radius: 12px;}
+    table {width: 100%; border-collapse: collapse; margin: 2rem 0;}
+    table th, table td {border: 1px solid #ddd; padding: 1rem; text-align: center;}
+    table th {background: #0a1a3f; color: #fff;}
+    form {display: grid; gap: 1rem; max-width: 400px; margin: auto;}
+    input, textarea {padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;}
     footer {background: #0a1a3f; color: #fff; text-align: center; padding: 2rem 1rem; margin-top: 2rem;}
     footer a {color: #c8a24d; text-decoration: none;}
   </style>
@@ -78,9 +83,37 @@
   </section>
 
   <section id="booking">
-    <h2>Бронирование</h2>
-    <p>Скоро здесь появится система онлайн-бронирования. Пока вы можете связаться с нами для брони напрямую.</p>
-    <a href="#contacts" class="btn">Связаться с нами</a>
+    <h2>Цены и бронирование</h2>
+    <table>
+      <tr>
+        <th>Тариф</th>
+        <th>Цена</th>
+        <th>Описание</th>
+      </tr>
+      <tr>
+        <td>1 ночь</td>
+        <td>от 1200 ₽</td>
+        <td>Одна капсула, все удобства включены.</td>
+      </tr>
+      <tr>
+        <td>Неделя</td>
+        <td>от 7000 ₽</td>
+        <td>Выгодный тариф для длительного пребывания.</td>
+      </tr>
+      <tr>
+        <td>Месяц</td>
+        <td>от 25 000 ₽</td>
+        <td>Для студентов, фрилансеров и командировочных.</td>
+      </tr>
+    </table>
+    <h3 style="text-align:center; margin-bottom:1rem;">Оставить заявку</h3>
+    <form action="mailto:info@chaicoffsky.ru" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="email" name="email" placeholder="Ваш Email" required />
+      <input type="text" name="dates" placeholder="Даты проживания" required />
+      <textarea name="message" rows="4" placeholder="Дополнительные пожелания"></textarea>
+      <button type="submit" class="btn">Отправить заявку</button>
+    </form>
   </section>
 
   <section id="rules">
@@ -114,7 +147,7 @@
   <section id="contacts">
     <h2>Контакты</h2>
     <p>📍 Санкт-Петербург, центр, рядом с Московским вокзалом</p>
-    <p>📞 Телефон: +7 (952) 805-10-30</p>
+    <p>📞 Телефон: +7 (999) 123-45-67</p>
     <p>✉️ Email: info@chaicoffsky.ru</p>
     <p><a href="https://t.me/chaicoffsky">Мы в Telegram</a></p>
   </section>
@@ -124,5 +157,6 @@
   </footer>
 </body>
 </html>
+
 
 
