@@ -103,8 +103,6 @@ section h2 {
   width: 300px;
   height: 200px;
   object-fit: cover;
-  padding: 0;
-  margin: 0;
 }
 
 /* Стили для отзывов */
@@ -113,7 +111,68 @@ section h2 {
   padding: 40px 0;
 }
 
-.t
+.testimonial-card .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-card .location {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .review {
+  font-style: italic;
+  color: #555;
+}
+
+/* Таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+table th {
+  background: #0a1a3f;
+  color: #fff;
+}
+
+/* Формы */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Футер */
+footer {
+  background: #0b1e39;
+  color: white;
+  te
+
 
 
 
