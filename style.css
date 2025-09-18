@@ -72,3 +72,49 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-card {
+  display: inline-block;
+  width: 300px;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial-card .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-card .location {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .review {
+  font-style: italic;
+  color: #555;
+}
+
