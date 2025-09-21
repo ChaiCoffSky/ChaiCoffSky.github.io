@@ -78,13 +78,23 @@
   </section>
 
   <section id="gallery">
-    <h2>Галерея</h2>
-    <div class="grid gallery">
-      <img src="https://picsum.photos/400/300?random=2" alt="Фото капсулы" />
-      <img src="https://picsum.photos/400/300?random=3" alt="Фото интерьера" />
-      <img src="https://picsum.photos/400/300?random=4" alt="Фото зоны отдыха" />
-    </div>
-  </section>
+  <h2>Галерея</h2>
+  <div class="grid gallery">
+    <img src="images/capsule1.jpg" alt="Фото капсулы изнутри" onclick="openLightbox(0)" />
+    <img src="images/capsule2.jpg" alt="Фото капсулы снаружи" onclick="openLightbox(1)" />
+    <img src="images/capsule3.jpg" alt="Фото зоны капсул" onclick="openLightbox(2)" />
+    <img src="images/capsule4.jpg" alt="Общий вид капсульного отеля" onclick="openLightbox(3)" />
+  </div>
+</section>
+
+<!-- Лайтбокс -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img">
+  <button class="prev" onclick="event.stopPropagation(); changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="event.stopPropagation(); changeSlide(1)">&#10095;</button>
+</div>
+
 
   <section id="booking">
     <h2>Цены и бронирование</h2>
@@ -161,6 +171,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
