@@ -169,8 +169,35 @@
   <footer>
     <p>© 2025 ЧайКоффSky — От капсулы сна к капсуле кофе</p>
   </footer>
+
+  <script>
+  let currentIndex = 0;
+  const images = [
+    "images/capsule1.jpg",
+    "images/capsule2.jpg",
+    "images/capsule3.jpg",
+    "images/capsule4.jpg"
+  ];
+
+  function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById("lightbox").style.display = "block";
+    document.getElementById("lightbox-img").src = images[currentIndex];
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+  function changeSlide(n) {
+    currentIndex = (currentIndex + n + images.length) % images.length;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+  }
+  </script>
 </body>
 </html>
+
+
 
 
 
